@@ -184,11 +184,11 @@ int ttysetup(int dev,struct termios *otermios_p, int baud, int st)
         return(-1);
     }
 
-    if ((ttermios.c_cflag != ntermios.c_cflag) ||
+    /*if ((ttermios.c_cflag != ntermios.c_cflag) ||
         (ttermios.c_iflag != ntermios.c_iflag)) {
         logerr(0,"Failed to correctly set up serial line");
         return(-1);
-    }
+    }*/
 
     return(0);
 }
